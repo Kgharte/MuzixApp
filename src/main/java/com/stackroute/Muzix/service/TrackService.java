@@ -10,7 +10,11 @@ public interface TrackService {
     public Track saveTrack(Track track) throws TrackAlreadyExistsException;
     public List<Track> getAllTracks();
     public Track updateTrack(Track track);
-    public boolean deleteTrack(int trackId) throws TrackNotFoundException;
+    public Track findByName(String name);
+            //throws TrackAlreadyExistsException;
+
+
+    public Track deleteTrack(int trackId) throws TrackNotFoundException;
 
 }
 
